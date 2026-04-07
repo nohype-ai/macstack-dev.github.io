@@ -2,7 +2,8 @@
 
 One command. Your entire dev Mac.
 
-`mack update`
+Install:
+`curl -fsSL https://macstack.dev/install.sh | zsh`
 
 ---
 

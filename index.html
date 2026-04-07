@@ -11,17 +11,17 @@
                 --accent: #00ffc3;
 
                 /* Spacing scale — all layout uses these tokens */
-                --space-xs:   8px;
-                --space-sm:  16px;
-                --space-md:  24px;
-                --space-lg:  40px;
-                --space-xl:  64px;
+                --space-xs: 8px;
+                --space-sm: 16px;
+                --space-md: 24px;
+                --space-lg: 40px;
+                --space-xl: 64px;
                 --space-2xl: 80px;
 
                 /* Page chrome */
-                --page-gutter: 32px;   /* horizontal breathing room */
-                --nav-height:  72px;   /* total nav bar height */
-                --section-gap: 24px;   /* gap between stacked section cards */
+                --page-gutter: 32px; /* horizontal breathing room */
+                --nav-height: 72px; /* total nav bar height */
+                --section-gap: 24px; /* gap between stacked section cards */
             }
 
             * {
@@ -78,7 +78,10 @@
                 padding: 8px 18px;
                 border: 1px solid #333;
                 border-radius: 9999px;
-                transition: border-color 0.2s, color 0.2s, background 0.2s;
+                transition:
+                    border-color 0.2s,
+                    color 0.2s,
+                    background 0.2s;
             }
             .github:hover {
                 border-color: var(--accent);
@@ -111,7 +114,7 @@
                 border: 1px solid #2a2a2a;
                 border-radius: 14px;
                 padding: var(--space-xs) var(--space-md);
-                max-width: 400px;
+                max-width: 800px;
                 margin: 0 auto var(--space-md);
                 display: flex;
                 align-items: center;
@@ -329,7 +332,9 @@
                 font-size: 1rem;
                 font-weight: 700;
                 cursor: pointer;
-                transition: transform 0.15s, opacity 0.15s;
+                transition:
+                    transform 0.15s,
+                    opacity 0.15s;
             }
             .cta-btn:hover {
                 transform: scale(1.03);
@@ -374,8 +379,8 @@
             @media (max-width: 640px) {
                 :root {
                     --page-gutter: 20px;
-                    --space-xl:    48px;
-                    --space-2xl:   64px;
+                    --space-xl: 48px;
+                    --space-2xl: 64px;
                     --section-gap: 16px;
                 }
                 .hero h1 {
@@ -414,8 +419,10 @@
             <p class="tagline">One command.<br />Your entire dev Mac.</p>
 
             <div class="terminal">
-                <code>mack update</code>
-                <button onclick="copyCommand(this)" class="copy-btn">Copy</button>
+                <code>curl -fsSL https://macstack.dev/install.sh | zsh</code>
+                <button onclick="copyCommand(this)" class="copy-btn">
+                    Copy
+                </button>
             </div>
 
             <p class="hero-sub">Config as code. Idempotent. Zero fluff.</p>
@@ -423,15 +430,17 @@
 
         <!-- SECTIONS -->
         <div class="sections-wrapper container">
-
             <!-- PROBLEM -->
             <div class="section-box problem-box">
                 <div class="section-header">
-                    <h2>Manual Mac setup is slow,<br />inconsistent, and never finishes.</h2>
+                    <h2>
+                        Manual Mac setup is slow,<br />inconsistent, and never
+                        finishes.
+                    </h2>
                     <p>
                         Every new machine or update means reinstalling tools,
-                        reconfiguring git, hunting fonts, restoring IDE settings,
-                        and cloning repos — again.
+                        reconfiguring git, hunting fonts, restoring IDE
+                        settings, and cloning repos — again.
                     </p>
                 </div>
             </div>
@@ -471,7 +480,8 @@
                 </div>
 
                 <p class="features-footer">
-                    Everything stays up to date.<br />Only what you declare gets touched.
+                    Everything stays up to date.<br />Only what you declare gets
+                    touched.
                 </p>
             </div>
 
@@ -487,13 +497,17 @@
                         <h3>Clone &amp; configure</h3>
                         <p>
                             Put your config in
-                            <code class="step-inline-code">stack/macstack.json</code>
+                            <code class="step-inline-code"
+                                >stack/macstack.json</code
+                            >
                         </p>
                     </div>
                     <div class="step">
                         <h3>Run once</h3>
                         <p>
-                            <code class="step-inline-code">bin/mack update</code>
+                            <code class="step-inline-code"
+                                >bin/mack update</code
+                            >
                             installs everything
                         </p>
                     </div>
@@ -520,9 +534,7 @@
                 </div>
 
                 <div class="code-block" id="install-code">
-                    git clone https://github.com/nohype-ai/MacStack.git<br />
-                    cd MacStack<br />
-                    bin/mack update
+                    curl -fsSL https://macstack.dev/install.sh | zsh
                 </div>
 
                 <div class="get-started-actions">
@@ -538,7 +550,6 @@
                     </a>
                 </div>
             </div>
-
         </div>
 
         <!-- FOOTER -->
@@ -546,7 +557,9 @@
             <p>
                 MacStack · Config as code for your Mac<br />
                 Made with zero fluff ·
-                <a href="https://github.com/nohype-ai/MacStack" target="_blank">github.com/nohype-ai/MacStack</a>
+                <a href="https://github.com/nohype-ai/MacStack" target="_blank"
+                    >github.com/nohype-ai/MacStack</a
+                >
             </p>
             <p class="footer-copy">© 2026 nohype-ai</p>
         </footer>
