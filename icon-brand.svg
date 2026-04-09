@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Block 1: hollow, slanted -->
+  <g transform="translate(71.33,218.11) skewX(-30.0) translate(-71.33,-218.11)">
+    <path fill-rule="evenodd" fill="#00ffc3"
+          d="M 46,81.89 h 50.67 v 136.22 h -50.67 Z
+             M 53,88.89 v 122.22 h 36.67 v -122.22 Z"/>
+  </g>
+
+  <!-- Block 2: hollow, slanted -->
+  <g transform="translate(150,218.11) skewX(-30.0) translate(-150,-218.11)">
+    <path fill-rule="evenodd" fill="#00ffc3"
+          d="M 124.67,81.89 h 50.67 v 136.22 h -50.67 Z
+             M 131.67,88.89 v 122.22 h 36.67 v -122.22 Z"/>
+  </g>
+
+  <!-- Block 3: equilateral triangle, solid -->
+  <polygon points="203.33,218.11 254,218.11 228.67,174.23" fill="#00ffc3"/>
+</svg>

@@ -58,10 +58,17 @@
             }
 
             .logo {
+                display: flex;
+                align-items: baseline-position;
+                gap: 5px;
                 font-size: 22px;
                 font-weight: 700;
                 letter-spacing: -0.5px;
                 color: white;
+            }
+            .logo img {
+                height: 34px;
+                width: auto;
             }
             .logo span {
                 color: var(--accent);
@@ -402,7 +409,11 @@
         <!-- NAV -->
         <nav>
             <div class="container nav-inner">
-                <div class="logo">MacStack<span>.</span></div>
+                <div class="logo">
+                    <img src="icon-brand.svg" alt="MacStack icon" /><b
+                        >MacStack<span>.</span></b
+                    >
+                </div>
                 <a
                     href="https://github.com/nohype-ai/MacStack"
                     target="_blank"
