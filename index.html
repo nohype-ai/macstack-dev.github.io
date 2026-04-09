@@ -154,6 +154,8 @@
                 cursor: pointer;
                 transition: transform 0.15s;
                 white-space: nowrap;
+                min-width: 90px;
+                text-align: center;
             }
             .copy-btn:hover {
                 transform: scale(1.05);
@@ -584,7 +586,7 @@
                     .textContent.trim();
                 navigator.clipboard.writeText(code).then(() => {
                     const original = btn.textContent;
-                    btn.textContent = "Copied!";
+                    btn.textContent = "Copied";
                     btn.classList.add("copied");
                     setTimeout(() => {
                         btn.textContent = original;
@@ -601,7 +603,7 @@
                     const original = btn.textContent;
                     btn.style.transition = "all 0.2s";
                     btn.style.transform = "scale(0.95)";
-                    btn.textContent = "✅ Copied!";
+                    btn.textContent = "Copied";
                     setTimeout(() => {
                         btn.style.transform = "scale(1)";
                         btn.textContent = original;
