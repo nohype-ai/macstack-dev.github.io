@@ -16,15 +16,8 @@ fi
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # Install or upgrade MacStack via Homebrew
-if brew list macstack &>/dev/null; then
-    echo "🍏 Upgrading MacStack ..."
-    brew tap nohype-ai/macstack
-    brew upgrade macstack
-else
-    echo "🍏 Installing MacStack ..."
-    brew tap nohype-ai/macstack
-    brew install macstack
-fi
+echo "🍏 Installing/upgrading MacStack ..."
+brew install nohype-ai/tap/macstack
 
 # Run first-time configuration to set the stack folder
 print "⚙️  Configuring MacStack ..."
