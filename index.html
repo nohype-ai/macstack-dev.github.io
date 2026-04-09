@@ -583,7 +583,8 @@
 
         <script>
             function copyCommand(btn) {
-                navigator.clipboard.writeText("mack update").then(() => {
+                const code = btn.closest(".terminal").querySelector("code").textContent.trim();
+                navigator.clipboard.writeText(code).then(() => {
                     const original = btn.textContent;
                     btn.textContent = "Copied!";
                     btn.classList.add("copied");
