@@ -1,6 +1,6 @@
 :root {
     --bg: #0a0a0a;
-    --text: #f8f8f8;
+    --text: white;
     --accent: #00ffc3;
 
     /* Spacing scale — all layout uses these tokens */
@@ -21,6 +21,7 @@
 body {
     background: var(--bg);
     color: var(--text);
+    font-size: 0.9rem;
     font-family:
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
@@ -83,12 +84,6 @@ section h3 {
     color: var(--accent);
     margin-bottom: var(--space-xs);
     font-weight: 600;
-}
-
-p {
-    font-size: 0.9rem;
-    color: #888;
-    line-height: 1.6;
 }
 
 nav {
@@ -223,7 +218,6 @@ footer a:hover {
     border-radius: 12px;
     border: 1px solid #222;
     line-height: 1.5;
-    color: #bbb;
 }
 .feature-card strong {
     display: block;
