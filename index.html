@@ -159,12 +159,6 @@
                 transform: scale(1.05);
             }
 
-            .hero-sub {
-                font-size: 1rem;
-                color: #888;
-                line-height: 1.6;
-            }
-
             /* SECTIONS */
             .sections-wrapper {
                 display: flex;
@@ -433,7 +427,11 @@
         <header class="hero container">
             <img src="icon-brand.svg" alt="MacStack" class="hero-icon" />
             <h1>MacStack</h1>
-            <p class="tagline">One command.<br />Your entire dev Mac.</p>
+            <p class="tagline">
+                The missing command to setup and update your entire tech
+                stack<br />
+                Config as code. Non-destructive. On any Mac.
+            </p>
 
             <div class="terminal">
                 <code>curl -fsSL https://macstack.dev/install.sh | zsh</code>
@@ -441,8 +439,6 @@
                     Copy
                 </button>
             </div>
-
-            <p class="hero-sub">Config as code. Idempotent. Zero fluff.</p>
         </header>
 
         <!-- SECTIONS -->
@@ -583,7 +579,10 @@
 
         <script>
             function copyCommand(btn) {
-                const code = btn.closest(".terminal").querySelector("code").textContent.trim();
+                const code = btn
+                    .closest(".terminal")
+                    .querySelector("code")
+                    .textContent.trim();
                 navigator.clipboard.writeText(code).then(() => {
                     const original = btn.textContent;
                     btn.textContent = "Copied!";
