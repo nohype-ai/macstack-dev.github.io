@@ -139,31 +139,6 @@
                     Works on a fresh macOS install or your existing machine.
                 </p>
             </div>
-
-            <!-- GET STARTED -->
-            <div class="section-box">
-                <div class="section-header">
-                    <span class="section-label">GET STARTED IN 30 SECONDS</span>
-                    <h2>Ready to ship?</h2>
-                </div>
-
-                <div class="code-block" id="install-code">
-                    curl -fsSL https://macstack.dev/install.sh | zsh
-                </div>
-
-                <div class="get-started-actions">
-                    <button onclick="copyInstall()" class="cta-btn">
-                        Copy install commands
-                    </button>
-                    <a
-                        href="https://github.com/nohype-ai/MacStack"
-                        target="_blank"
-                        class="docs-link"
-                    >
-                        → Full documentation on GitHub
-                    </a>
-                </div>
-            </div>
         </div>
 
         <!-- FOOTER -->
@@ -190,22 +165,6 @@
                         btn.textContent = original;
                         btn.classList.remove("copied");
                     }, 1800);
-                });
-            }
-            function copyInstall() {
-                const code = document
-                    .getElementById("install-code")
-                    .textContent.trim();
-                navigator.clipboard.writeText(code).then(() => {
-                    const btn = event.target;
-                    const original = btn.textContent;
-                    btn.style.transition = "all 0.2s";
-                    btn.style.transform = "scale(0.95)";
-                    btn.textContent = "Copied";
-                    setTimeout(() => {
-                        btn.style.transform = "scale(1)";
-                        btn.textContent = original;
-                    }, 2000);
                 });
             }
         </script>

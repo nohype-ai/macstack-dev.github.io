@@ -3,6 +3,7 @@
 ## Brainstorm
 
 * Config as code. Non-destructive. On any Mac.
+* GET STARTED IN 30 SECONDS
 
 ---
 

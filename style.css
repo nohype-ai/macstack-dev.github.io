@@ -302,45 +302,6 @@ h2 {
 
 /* GET STARTED */
 
-.code-block {
-    background: #0d0d0d;
-    border: 1px solid #222;
-    border-radius: 12px;
-    padding: var(--space-md) var(--space-lg);
-    font-family:
-        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-        "Liberation Mono", "Courier New", monospace;
-    font-size: 0.95rem;
-    color: var(--accent);
-    line-height: 1.9;
-    margin-bottom: var(--space-md);
-}
-
-.get-started-actions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-sm);
-}
-
-.cta-btn {
-    background: var(--accent);
-    color: #000;
-    border: none;
-    padding: 14px 36px;
-    border-radius: 9999px;
-    font-size: 1rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition:
-        transform 0.15s,
-        opacity 0.15s;
-}
-.cta-btn:hover {
-    transform: scale(1.03);
-    opacity: 0.92;
-}
-
 .docs-link {
     color: #666;
     text-decoration: none;
