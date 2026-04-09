@@ -4,6 +4,9 @@
 
 * Config as code. Non-destructive. On any Mac.
 * GET STARTED IN 30 SECONDS
+* Manual Mac setup is slow, inconsistent, and never finishes. Every new machine or update means reinstalling tools, reconfiguring git, hunting fonts, restoring IDE settings, and cloning repos — again.
+* Everything stays up to date. Only what you declare gets touched.
+* Works on a fresh macOS install or your existing machine.
 
 ---
 

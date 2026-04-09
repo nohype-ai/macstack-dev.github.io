@@ -7,9 +7,8 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <!-- NAV -->
         <nav>
-            <div class="container nav-inner">
+            <div>
                 <div class="logo">
                     <img src="icon-brand.svg" alt="MacStack icon" /><b
                         >MacStack<span>.</span></b
@@ -25,14 +24,13 @@
             </div>
         </nav>
 
-        <!-- HERO -->
-        <header class="hero container">
-            <img src="icon-brand.svg" alt="MacStack" class="hero-icon" />
+        <header>
+            <img src="icon-brand.svg" alt="MacStack" />
             <h1>MacStack</h1>
-            <p class="tagline">
+            <h2>
                 Define your entire tech stack.<br />Apply it with one command –
                 to any Mac.
-            </p>
+            </h2>
 
             <div class="terminal">
                 <code>curl -fsSL https://macstack.dev/install.sh | zsh</code>
@@ -42,104 +40,73 @@
             </div>
         </header>
 
-        <!-- SECTIONS -->
-        <div class="sections-wrapper container">
-            <!-- PROBLEM -->
-            <div class="section-box problem-box">
-                <div class="section-header">
-                    <h2>
-                        Manual Mac setup is slow,<br />inconsistent, and never
-                        finishes.
-                    </h2>
+        <section>
+            <div>
+                <h3>YOUR CONFIG AS CODE</h3>
+                <h2>One command to rule them all.</h2>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <strong>🐚 Shell</strong>Prompt, paths, functions, aliases,
+                    environment
+                </div>
+                <div class="feature-card">
+                    <strong>🐙 Git</strong>Global configuration
+                </div>
+                <div class="feature-card">
+                    <strong>📰 Fonts</strong>All your developer fonts
+                </div>
+                <div class="feature-card">
+                    <strong>⌨️ CLI Tools</strong>brew, git, pyenv, python,
+                    claude-code, etc.
+                </div>
+                <div class="feature-card">
+                    <strong>🍏 Apps</strong>Graphical + Mac App Store apps
+                </div>
+                <div class="feature-card">
+                    <strong>⚙️ IDEs</strong>Settings, keybindings, and
+                    extensions for Zed &amp; VS Code-based editors
+                </div>
+                <div class="feature-card">
+                    <strong>📂 Repos</strong>All your git repositories
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h3>HOW IT WORKS</h3>
+                <h2>Three minutes to a perfect dev Mac.</h2>
+            </div>
+
+            <div class="how-it-works-grid">
+                <div class="step">
+                    <h4>Clone &amp; configure</h4>
                     <p>
-                        Every new machine or update means reinstalling tools,
-                        reconfiguring git, hunting fonts, restoring IDE
-                        settings, and cloning repos — again.
+                        Put your config in
+                        <code class="step-inline-code"
+                            >stack/macstack.json</code
+                        >
+                    </p>
+                </div>
+                <div class="step">
+                    <h4>Run once</h4>
+                    <p>
+                        <code class="step-inline-code">bin/mack update</code>
+                        installs everything
+                    </p>
+                </div>
+                <div class="step">
+                    <h4>Update forever</h4>
+                    <p>
+                        Just type
+                        <code class="step-inline-code">mack update</code>
+                        anytime
                     </p>
                 </div>
             </div>
-
-            <!-- FEATURES -->
-            <div class="section-box">
-                <div class="section-header">
-                    <span class="section-label">YOUR CONFIG AS CODE</span>
-                    <h2>One command to rule them all.</h2>
-                </div>
-
-                <div class="features">
-                    <div class="feature-card">
-                        <strong>🐚 Shell</strong>Prompt, paths, functions,
-                        aliases, environment
-                    </div>
-                    <div class="feature-card">
-                        <strong>🐙 Git</strong>Global configuration
-                    </div>
-                    <div class="feature-card">
-                        <strong>📰 Fonts</strong>All your developer fonts
-                    </div>
-                    <div class="feature-card">
-                        <strong>⌨️ CLI Tools</strong>brew, git, pyenv, python,
-                        claude-code, etc.
-                    </div>
-                    <div class="feature-card">
-                        <strong>🍏 Apps</strong>Graphical + Mac App Store apps
-                    </div>
-                    <div class="feature-card">
-                        <strong>⚙️ IDEs</strong>Settings, keybindings, and
-                        extensions for Zed &amp; VS Code-based editors
-                    </div>
-                    <div class="feature-card">
-                        <strong>📂 Repos</strong>All your git repositories
-                    </div>
-                </div>
-
-                <p class="features-footer">
-                    Everything stays up to date.<br />Only what you declare gets
-                    touched.
-                </p>
-            </div>
-
-            <!-- HOW IT WORKS -->
-            <div class="section-box">
-                <div class="section-header">
-                    <span class="section-label">HOW IT WORKS</span>
-                    <h2>Three minutes to a perfect dev Mac.</h2>
-                </div>
-
-                <div class="how-it-works-grid">
-                    <div class="step">
-                        <h3>Clone &amp; configure</h3>
-                        <p>
-                            Put your config in
-                            <code class="step-inline-code"
-                                >stack/macstack.json</code
-                            >
-                        </p>
-                    </div>
-                    <div class="step">
-                        <h3>Run once</h3>
-                        <p>
-                            <code class="step-inline-code"
-                                >bin/mack update</code
-                            >
-                            installs everything
-                        </p>
-                    </div>
-                    <div class="step">
-                        <h3>Update forever</h3>
-                        <p>
-                            Just type
-                            <code class="step-inline-code">mack update</code>
-                            anytime
-                        </p>
-                    </div>
-                </div>
-
-                <p class="how-footer">
-                    Works on a fresh macOS install or your existing machine.
-                </p>
-            </div>
-        </div>
+        </section>
 
         <!-- FOOTER -->
         <footer>
