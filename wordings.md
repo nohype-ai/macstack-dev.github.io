@@ -1,6 +1,11 @@
 # MacStack
 
-One command. Your entire dev Mac.
+## Brainstorm
+
+* Config as code. Non-destructive. On any Mac.
+
+---
+
 
 Install:
 `curl -fsSL https://macstack.dev/install.sh | zsh`
