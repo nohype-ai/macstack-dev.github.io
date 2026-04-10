@@ -33,20 +33,41 @@
         </header>
 
         <section>
-            <h3>INSTALL SCRIPT</h3>
-            <h2>Get MacStack via Homebrew</h2>
+            <h3>Setup Script</h3>
+            <h2>Get MacStack and set config path</h2>
             <div class="terminal">
                 <code>curl -fsSL https://macstack.dev/install.sh | zsh</code>
                 <button onclick="copyCommand(this)" class="copy-btn">
                     Copy
                 </button>
             </div>
+
+            <div class="how-it-works-grid">
+                <div class="step">
+                    <h4>Run above command</h4>
+                    <p>
+                        It will ensure Homebrew is present and set up MacStack
+                    </p>
+                </div>
+                <div class="step">
+                    <h4>Set config path</h4>
+                    <p>
+                        Enter the folder path where your stack config will live
+                    </p>
+                </div>
+                <div class="step">
+                    <h4>Apply your config</h4>
+                    <p>
+                        Verify that your stack update now works:
+                        <code class="step-inline-code">mack update</code>
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section>
             <h3>Tech Stack Config</h3>
-            <h2>One command to rule them all</h2>
-
+            <h2>Evolve your stack configuration</h2>
             <div class="features">
                 <div class="feature-card">
                     <h4>🐚 Shell</h4>
@@ -82,38 +103,6 @@
                 <div class="feature-card">
                     <h4>📂 Repos</h4>
                     All your git repositories
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h3>HOW IT WORKS</h3>
-            <h2>Three minutes to a perfect dev Mac</h2>
-
-            <div class="how-it-works-grid">
-                <div class="step">
-                    <h4>Clone &amp; configure</h4>
-                    <p>
-                        Put your config in
-                        <code class="step-inline-code"
-                            >stack/macstack.json</code
-                        >
-                    </p>
-                </div>
-                <div class="step">
-                    <h4>Run once</h4>
-                    <p>
-                        <code class="step-inline-code">bin/mack update</code>
-                        installs everything
-                    </p>
-                </div>
-                <div class="step">
-                    <h4>Update forever</h4>
-                    <p>
-                        Just type
-                        <code class="step-inline-code">mack update</code>
-                        anytime
-                    </p>
                 </div>
             </div>
         </section>

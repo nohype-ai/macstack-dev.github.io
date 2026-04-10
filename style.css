@@ -170,6 +170,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
 }
 
 .terminal code {
@@ -202,6 +203,47 @@ footer a:hover {
     transform: scale(1.05);
 }
 
+/* SETUP STEPS */
+
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    counter-reset: step-counter;
+}
+
+.step {
+    position: relative;
+    padding-left: 42px;
+}
+.step::before {
+    counter-increment: step-counter;
+    content: counter(step-counter);
+    position: absolute;
+    left: 1px;
+    top: -5.3px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.step-inline-code {
+    background: black;
+    color: var(--accent);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family:
+        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    font-size: 0.85em;
+}
+
 /* FEATURES */
 
 .features {
@@ -222,46 +264,4 @@ footer a:hover {
     color: var(--accent);
     margin-bottom: 6px;
     font-size: 0.95rem;
-}
-
-/* HOW IT WORKS */
-
-.how-it-works-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--space-lg);
-    counter-reset: step-counter;
-}
-
-.step {
-    position: relative;
-    padding-left: 52px;
-}
-.step::before {
-    counter-increment: step-counter;
-    content: counter(step-counter);
-    position: absolute;
-    left: 0;
-    top: -6px;
-    width: 32px;
-    height: 32px;
-    background: var(--accent);
-    color: #000;
-    font-weight: 700;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-.step-inline-code {
-    background: #222;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family:
-        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-        "Liberation Mono", "Courier New", monospace;
-    font-size: 0.85em;
 }
