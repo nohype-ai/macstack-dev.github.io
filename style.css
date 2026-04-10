@@ -1,7 +1,9 @@
 :root {
     --bg: #0a0a0a;
     --text: white;
+    --text-secondary: #888;
     --accent: #00ffc3;
+    --tertiary: #222;
 
     /* Spacing scale — all layout uses these tokens */
     --space-xs: 8px;
@@ -46,7 +48,7 @@ section {
     background: #111;
     border-radius: 20px;
     padding: var(--space-xl) var(--space-xl);
-    border: 1px solid #1e1e1e;
+    border: 1px solid var(--tertiary);
     margin-bottom: var(--space-xl);
 }
 
@@ -61,7 +63,7 @@ h1 {
 h2 {
     text-align: center;
     font-size: 2rem;
-    color: #aaa;
+    color: var(--text-secondary);
     line-height: 1.5;
     margin-bottom: var(--space-lg);
     font-weight: 400;
@@ -87,8 +89,9 @@ h4 {
 }
 
 nav {
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid var(--tertiary);
     padding: var(--space-xs) 0;
+    color: var(--text-secondary);
 }
 
 nav > div {
@@ -103,12 +106,12 @@ footer {
     padding-top: var(--space-md);
     padding-bottom: var(--space-md);
     text-align: center;
-    color: #555;
-    border-top: 1px solid #1e1e1e;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--tertiary);
     line-height: 1.8;
 }
 footer a {
-    color: #555;
+    color: var(--text-secondary);
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -141,12 +144,12 @@ footer a:hover {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #ccc;
+    color: var(--text-secondary);
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
     padding: 8px 18px;
-    border: 1px solid #333;
+    border: 1px solid var(--tertiary);
     border-radius: 9999px;
     transition:
         border-color 0.2s,
@@ -163,12 +166,13 @@ footer a:hover {
 /* INSTALL SCRIPT */
 
 .terminal {
-    background: #111;
-    border: 1px solid #2a2a2a;
-    border-radius: 14px;
-    padding: var(--space-xs) var(--space-xs);
-    max-width: 760px;
-    margin: 0 auto;
+    background: black;
+    border: 1px solid var(--tertiary);
+    border-radius: 9999px;
+    padding-left: 18px;
+    padding-right: var(--space-xs);
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
     display: flex;
     align-items: center;
     gap: var(--space-sm);
@@ -216,7 +220,7 @@ footer a:hover {
     background: #161616;
     padding: var(--space-md);
     border-radius: 12px;
-    border: 1px solid #222;
+    border: 1px solid var(--tertiary);
     line-height: 1.5;
 }
 .feature-card strong {
