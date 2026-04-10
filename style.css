@@ -49,7 +49,7 @@ section {
     border-radius: 20px;
     padding: var(--space-xl) var(--space-xl);
     border: 1px solid var(--tertiary);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-2xl);
 }
 
 h1 {
