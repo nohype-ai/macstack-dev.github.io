@@ -46,7 +46,6 @@ section {
     max-width: 960px;
     background-color: red;
     background: #111;
-    border-radius: 20px;
     padding: var(--space-xl) var(--space-xl);
     border: 1px solid var(--tertiary);
     margin-bottom: var(--space-2xl);
@@ -146,7 +145,7 @@ footer a:hover {
     font-size: 0.9rem;
     padding: 8px 18px;
     border: 1px solid var(--tertiary);
-    border-radius: 9999px;
+    /* border-radius: 9999px; */
     transition:
         border-color 0.2s,
         color 0.2s;
@@ -162,7 +161,7 @@ footer a:hover {
 .terminal {
     background: black;
     border: 1px solid var(--tertiary);
-    border-radius: 9999px;
+    /* border-radius: 9999px; */
     padding-left: 18px;
     padding-right: var(--space-xs);
     padding-top: var(--space-xs);
@@ -189,7 +188,7 @@ footer a:hover {
     color: #000;
     border: none;
     padding: 8px 20px;
-    border-radius: 9999px;
+    /* border-radius: 9999px; */
     font-weight: 600;
     font-size: 0.875rem;
     cursor: pointer;
@@ -229,7 +228,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     flex-shrink: 0;
 }
 
@@ -237,7 +236,7 @@ footer a:hover {
     background: black;
     color: var(--accent);
     padding: 2px 6px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     font-family:
         ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
         "Liberation Mono", "Courier New", monospace;
@@ -249,13 +248,12 @@ footer a:hover {
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: var(--space-sm);
+    gap: var(--space-md);
 }
 
 .feature-card {
     background: #161616;
     padding: var(--space-md);
-    border-radius: 12px;
     border: 1px solid var(--tertiary);
     line-height: 1.5;
 }
