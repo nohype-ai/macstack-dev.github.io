@@ -130,20 +130,16 @@ footer a:hover {
     letter-spacing: -0.5px;
     color: white;
 }
+
 .logo img {
-    height: 34px;
+    margin-top: -0.26px;
+    height: 34.5px;
     width: auto;
-}
-.logo span {
-    color: var(--accent);
 }
 
 /* GITHUB BUTTON */
 
 .github {
-    display: flex;
-    align-items: center;
-    gap: 8px;
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: 500;
@@ -153,14 +149,12 @@ footer a:hover {
     border-radius: 9999px;
     transition:
         border-color 0.2s,
-        color 0.2s,
-        background 0.2s;
+        color 0.2s;
 }
 
 .github:hover {
     border-color: var(--accent);
     color: var(--accent);
-    background: rgba(0, 255, 195, 0.08);
 }
 
 /* INSTALL SCRIPT */
