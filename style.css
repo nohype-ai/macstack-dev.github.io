@@ -6,9 +6,9 @@
     --accent: #00ffc3;
 
     --bg1: #0a0a0a;
-    --bg2: #111;
-    --bg3: #222;
-    --bg4: #333;
+    --bg2: #141414;
+    --bg3: #242424;
+    --bg4: #343434;
 
     --space-xs: 0.25rem;
     --space-s: 0.5rem;
@@ -103,7 +103,7 @@ section > div {
 }
 
 nav {
-    box-shadow: 0 0 350px rgba(0, 255, 195, 0.75);
+    box-shadow: 0 0 350px rgba(0, 255, 195, 0.8);
 }
 
 h1 {
