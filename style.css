@@ -99,13 +99,11 @@ section > div {
     padding: var(--space-xl);
     margin-bottom: var(--space-xxl);
     transition: box-shadow 0.5s ease;
+    border-radius: var(--space-s);
 }
 
 nav {
     box-shadow: 0 0 350px rgba(0, 255, 195, 0.75);
-}
-
-section > div:hover {
 }
 
 h1 {
@@ -172,6 +170,7 @@ footer a:hover {
 }
 
 button {
+    border-radius: 100px;
     min-width: 90px;
     background: var(--bg3);
     color: var(--secondary);
@@ -202,6 +201,7 @@ button:hover {
 /* INSTALL SCRIPT */
 
 .terminal {
+    border-radius: 100px;
     background: black;
     padding-left: var(--space-m);
     padding-right: var(--space-s);
@@ -237,16 +237,17 @@ button:hover {
 
 .step {
     position: relative;
-    padding-left: 42px;
+    padding-left: 43px;
 }
 .step::before {
     counter-increment: step-counter;
     content: counter(step-counter);
     position: absolute;
     left: 1px;
-    top: -4px;
-    width: 30px;
-    height: 30px;
+    top: -3px;
+    width: var(--space-l);
+    height: var(--space-l);
+    border-radius: 50%;
     /* border: 1px solid var(--bg3); */
     background-color: var(--bg3);
     color: var(--secondary);
