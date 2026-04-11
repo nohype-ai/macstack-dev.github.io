@@ -70,7 +70,8 @@ body {
 }
 
 header {
-    padding: var(--space-xl) 0;
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-l);
 }
 
 header img {
@@ -95,7 +96,7 @@ footer > div {
 
 section > div {
     background: var(--bg2);
-    padding: var(--space-xl) var(--space-xl);
+    padding: var(--space-xl);
     margin-bottom: var(--space-xxl);
     transition: box-shadow 0.5s ease;
 }
@@ -120,7 +121,7 @@ h2 {
     text-align: center;
     font-size: var(--font-size-l);
     color: var(--primary);
-    margin-bottom: var(--space-l);
+    margin-bottom: var(--space-xl);
     font-weight: normal;
 }
 
