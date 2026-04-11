@@ -2,12 +2,13 @@
 
 :root {
     --primary: white;
-    --secondary: #888;
+    --secondary: #999;
     --accent: #00ffc3;
 
     --bg1: #0a0a0a;
     --bg2: #111;
     --bg3: #222;
+    --bg4: #333;
 
     --space-xs: 0.25rem;
     --space-s: 0.5rem;
@@ -18,16 +19,53 @@
 
     --font-size-s: 0.8rem;
     --font-size-m: 1rem;
-    --font-size-l: 2rem;
+    --font-size-l: 1.75rem;
     --font-size-xl: 3rem;
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("fonts/Geist-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("fonts/Geist-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("fonts/Geist-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "CustomFontMono";
+    src: url("fonts/GeistMono-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
     font-family:
-        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        "CustomFont",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
     font-size: var(--font-size);
     line-height: 1.6;
-    color: var(--primary);
+    color: var(--secondary);
     background-color: var(--bg1);
 }
 
@@ -38,7 +76,7 @@ header {
 header img {
     width: 150px;
     height: 150px;
-    margin-bottom: 40px;
+    margin-bottom: -35px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -62,19 +100,20 @@ section > div {
 }
 
 h1 {
+    color: var(--primary);
     text-align: center;
     font-size: var(--font-size-xl);
     font-weight: 700;
     letter-spacing: -3px;
-    margin-bottom: -6px;
+    margin-bottom: var(--space-s);
 }
 
 h2 {
     text-align: center;
     font-size: var(--font-size-l);
-    color: var(--secondary);
+    color: var(--primary);
     margin-bottom: var(--space-l);
-    font-weight: 300;
+    font-weight: normal;
 }
 
 h3 {
@@ -84,13 +123,14 @@ h3 {
     text-transform: uppercase;
     text-align: center;
     color: var(--accent);
-    margin-bottom: var(--space-xs);
+    margin-bottom: var(--space-s);
 }
 
 h4 {
     font-size: var(--font-size-m);
     margin-bottom: var(--space-xs);
-    color: var(--accent);
+    color: var(--primary);
+    font-weight: bold;
 }
 
 nav {
@@ -140,6 +180,7 @@ button:hover {
 /* NAVBAR LOGO */
 
 .logo {
+    color: var(--primary);
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -165,7 +206,7 @@ button:hover {
 
 .terminal code {
     font-family:
-        SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas,
+        "CustomFontMono", SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas,
         "Liberation Mono", "Courier New", monospace;
     color: var(--accent);
     flex: 1;
@@ -199,7 +240,7 @@ button:hover {
     height: 30px;
     /* border: 1px solid var(--bg3); */
     background-color: var(--bg3);
-    color: var(--accent);
+    color: var(--secondary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,12 +249,12 @@ button:hover {
 }
 
 .step-inline-code {
-    background: black;
-    color: var(--accent);
+    background: var(--bg3);
+    color: var(--secondary);
     padding: 2px 6px;
-    /* border-radius: 4px; */
+    /*border-radius: 4px;*/
     font-family:
-        SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas,
+        "CustomFontMono", SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas,
         "Liberation Mono", "Courier New", monospace;
 }
 
