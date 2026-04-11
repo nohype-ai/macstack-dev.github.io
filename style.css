@@ -160,16 +160,17 @@ footer > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: var(--space-xl);
 }
 
-footer a {
+a {
     color: var(--secondary);
     text-decoration: none;
     transition: color 0.2s;
 }
 
-footer a:hover {
-    color: #aaa;
+a:hover {
+    color: var(--accent);
 }
 
 button {
