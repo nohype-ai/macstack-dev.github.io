@@ -1,0 +1,54 @@
+/* Quasi standards that minimize surprises */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Makes `border` utility/classes work predictably */
+    border: 0 solid currentColor;
+
+    /* Prevents unexpected background tiling */
+    background-repeat: no-repeat;
+}
+
+/* Media elements – prevents overflow and inline gaps */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Lists – removes default bullets/numbers */
+ul,
+ol {
+    list-style: none;
+}
+
+/* RESET FORM CONTROLS (they otherwise get styled by the system) */
+button,
+input,
+select,
+textarea,
+optgroup {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
