@@ -97,6 +97,14 @@ section > div {
     background: var(--bg2);
     padding: var(--space-xl) var(--space-xl);
     margin-bottom: var(--space-xxl);
+    transition: box-shadow 0.5s ease;
+}
+
+nav {
+    box-shadow: 0 0 350px rgba(0, 255, 195, 0.75);
+}
+
+section > div:hover {
 }
 
 h1 {
