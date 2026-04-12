@@ -1,0 +1,36 @@
+:root {
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
+    --space-xxl: 6rem;
+
+    --grid-column-width-min: 12rem;
+    --grid-gap: var(--space-l);
+
+    --column-gap: var(--grid-gap);
+    --row-gap: var(--grid-gap);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(var(--grid-column-width-min), 1fr)
+    );
+    gap: var(--grid-gap);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--column-gap);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: var(--row-gap);
+    flex-wrap: wrap;
+}
