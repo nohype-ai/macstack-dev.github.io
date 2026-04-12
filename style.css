@@ -21,6 +21,10 @@
     --font-size-m: 1rem;
     --font-size-l: 1.75rem;
     --font-size-xl: 3rem;
+
+    --line-height: 1.5;
+
+    --grid-column-width-min: 12rem;
 }
 
 @font-face {
@@ -64,7 +68,7 @@ body {
         Roboto,
         sans-serif;
     font-size: var(--font-size);
-    line-height: 1.6;
+    line-height: var(--line-height);
     color: var(--secondary);
     background-color: var(--bg1);
 }
@@ -189,6 +193,15 @@ button:hover {
     color: var(--accent);
 }
 
+code {
+    font-family:
+        "CustomFontMono", SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    background: var(--bg3);
+    padding: 2px 6px;
+    border-radius: var(--space-xs);
+}
+
 /* NAVBAR LOGO */
 
 .logo {
@@ -202,33 +215,29 @@ button:hover {
     height: 40px;
 }
 
-/* INSTALL SCRIPT */
+/* SETUP SCRIPT */
 
 .terminal {
     width: 100%;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 100px;
+    border-radius: 100vh; /* there is no more explicit offical way to create the pill shape */
     background: black;
+    padding: var(--space-s);
     padding-left: var(--space-m);
-    padding-right: var(--space-s);
-    padding-top: var(--space-s);
-    padding-bottom: var(--space-s);
     display: flex;
     align-items: center;
     gap: var(--space-s);
     margin-bottom: var(--space-xl);
 }
 
-.terminal code {
+.terminal > span {
     font-family:
         "CustomFontMono", SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas,
         "Liberation Mono", "Courier New", monospace;
     color: var(--accent);
     flex: 1;
-    text-align: left;
-
     white-space: pre-wrap; /* preserves original whitespace + allows wrapping */
     overflow-wrap: anywhere; /* best modern way to break URLs */
     word-break: break-all;
@@ -236,55 +245,57 @@ button:hover {
 
 /* SETUP STEPS */
 
-.how-it-works-grid {
+.setup-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(var(--grid-column-width-min), 1fr)
+    );
     gap: var(--space-l);
-    counter-reset: step-counter;
 }
 
 .step {
-    position: relative;
-    padding-left: 43px;
+    /* Lay out horizontally with gaps in between, align at the top */
+    display: flex;
+    gap: var(--space-s);
 }
-.step::before {
-    counter-increment: step-counter;
-    content: counter(step-counter);
-    position: absolute;
-    left: 1px;
-    top: -3px;
+
+.step-number {
+    /* Centering (The "Modern" way) */
+    display: grid;
+    place-items: center;
+    line-height: 1;
+
+    /* Sizing */
     width: var(--space-l);
     height: var(--space-l);
     border-radius: 50%;
-    /* border: 1px solid var(--bg3); */
-    background-color: var(--bg3);
-    color: var(--secondary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* border-radius: 50%; */
+
+    /* Protection against being squished */
     flex-shrink: 0;
+
+    /* Shift vertically to align with text */
+    margin-top: calc(
+        ((var(--font-size-m) * var(--line-height)) - var(--space-l)) / 2
+    );
+
+    /* Aesthetics */
+    background-color: var(--bg3);
+    font-weight: bold;
 }
 
-.step-inline-code {
-    background: var(--bg3);
-    color: var(--secondary);
-    padding: 2px 6px;
-    border-radius: var(--space-xs);
-    /*border-radius: 4px;*/
-    font-family:
-        "CustomFontMono", SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas,
-        "Liberation Mono", "Courier New", monospace;
+.step-content {
+    /* Stretch to fill available space */
+    flex: 1;
 }
 
 /* FEATURES */
 
 .features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: var(--space-m);
-}
-
-.feature-card {
-    padding: var(--space-m);
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(var(--grid-column-width-min), 1fr)
+    );
+    gap: var(--space-l);
 }
