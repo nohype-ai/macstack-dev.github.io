@@ -1,3 +1,9 @@
+/*
+This file relies on other files being already loaded:
+- clean-slate.css
+- simple-layout.css
+*/
+
 /* MacStack Style */
 
 :root {
