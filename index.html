@@ -14,7 +14,7 @@
     <body>
         <nav>
             <div>
-                <div class="logo">
+                <div class="logo row">
                     <img src="icon-brand.svg" alt="MacStack icon" />
                     MacStack
                 </div>
@@ -49,42 +49,47 @@
             <div>
                 <h3>Setup Script</h3>
                 <h2>Get started in one minute</h2>
-                <div class="terminal">
-                    <span>curl -fsSL https://macstack.dev/setup.sh | zsh</span>
-                    <button onclick="copyCommand(this)">↓ Copy</button>
-                </div>
 
-                <div class="grid">
-                    <div class="step">
-                        <span class="step-number">1</span>
-                        <div class="step-content">
-                            <h4>Run above command</h4>
-                            <p>
-                                It will ensure Homebrew is present and set up
-                                MacStack
-                            </p>
-                        </div>
+                <div class="primary column">
+                    <div class="terminal row">
+                        <span>
+                            curl -fsSL https://macstack.dev/setup.sh | zsh
+                        </span>
+                        <button onclick="copyCommand(this)">↓ Copy</button>
                     </div>
-                    <div class="step">
-                        <span class="step-number">2</span>
-                        <div class="step-content">
-                            <h4>Set config path</h4>
-                            <p>
-                                Enter the folder path where your stack config
-                                will live
-                            </p>
+
+                    <div class="primary grid">
+                        <div class="step row">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4>Run above command</h4>
+                                <p>
+                                    It will ensure Homebrew is present and set
+                                    up MacStack
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="step">
-                        <span class="step-number">3</span>
-                        <div class="step-content">
-                            <h4>Apply your config</h4>
-                            <p>
-                                Verify that your stack update now works:
-                                <code class="step-inline-code"
-                                    >mack update</code
-                                >
-                            </p>
+                        <div class="step row">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4>Set config path</h4>
+                                <p>
+                                    Enter the folder path where your stack
+                                    config will live
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step row">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4>Apply your config</h4>
+                                <p>
+                                    Verify that your stack update now works:
+                                    <code class="step-inline-code"
+                                        >mack update</code
+                                    >
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -95,7 +100,7 @@
             <div>
                 <h3>Tech Stack Config</h3>
                 <h2>Evolve your stack configuration</h2>
-                <div class="grid">
+                <div class="primary grid">
                     <div>
                         <h4>Shell Environment</h4>
                         Prompt, paths, functions, aliases, environment
@@ -137,22 +142,21 @@
         </section>
 
         <footer>
-            <div>
-                <span>
+            <div class="primary row">
+                <div class="primary row">
                     <a
                         href="https://github.com/nohype-ai/MacStack"
                         target="_blank"
                         rel="noopener noreferrer"
                         >GitHub</a
                     >
-                    &nbsp; &nbsp; &nbsp;
                     <a
                         href="https://nohype.ai"
                         target="_blank"
                         rel="noopener noreferrer"
                         >Nohype AI</a
                     >
-                </span>
+                </div>
                 © 2026 Nohype AI GmbH
             </div>
         </footer>

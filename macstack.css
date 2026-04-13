@@ -158,10 +158,8 @@ footer {
 }
 
 footer > div {
-    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--space-xl);
 }
 
 a {
@@ -203,7 +201,6 @@ code {
 
 .logo {
     color: var(--primary);
-    display: flex;
     align-items: center;
     font-weight: bold;
 }
@@ -223,10 +220,8 @@ code {
     background: black;
     padding: var(--space-s);
     padding-left: var(--space-m);
-    display: flex;
     align-items: center;
     gap: var(--space-s);
-    margin-bottom: var(--space-xl);
 }
 
 .terminal > span {
@@ -235,7 +230,6 @@ code {
         "Liberation Mono", "Courier New", monospace;
     color: var(--accent);
     flex: 1;
-    white-space: pre-wrap; /* preserves original whitespace + allows wrapping */
     overflow-wrap: anywhere; /* best modern way to break URLs */
     word-break: break-all;
 }
@@ -243,8 +237,6 @@ code {
 /* SETUP STEPS */
 
 .step {
-    /* Lay out horizontally with gaps in between, align at the top */
-    display: flex;
     gap: var(--space-s);
 }
 
