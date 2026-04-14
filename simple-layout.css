@@ -77,11 +77,11 @@
 .primary.grid,
 .primary.column,
 .primary.row {
-    gap: var(--space-l);
+    gap: var(--space-xl);
 }
 
 .secondary.grid,
 .secondary.column,
 .secondary.row {
-    gap: var(--space-m);
+    gap: var(--space-l);
 }
