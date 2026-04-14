@@ -70,6 +70,12 @@ body {
     background-color: var(--bg1);
 }
 
+nav {
+    background-color: var(--bg2);
+    padding: var(--space-xs) 0;
+    box-shadow: 0 0 350px rgba(0, 255, 195, 0.8);
+}
+
 header {
     padding-top: 62px;
     padding-bottom: 42px;
@@ -82,29 +88,16 @@ header img {
     margin-left: auto;
     margin-right: auto;
 }
-
-/* horizontal container sizing
-   width: 100% first = fluid base so max-width can clamp cleanly
-   (prevents horizontal overflow on any screen < 1280 px) */
-nav > div,
-header > div,
-section > div,
-footer > div {
-    margin: 0 auto;
-    width: 100%;
-    max-width: min(1280px, 90vw);
+section {
+    margin-bottom: var(--space-xxl);
 }
 
-section > div {
+section .container {
     background: var(--bg2);
     padding: var(--space-xl);
     margin-bottom: var(--space-xxl);
     transition: box-shadow 0.5s ease;
     border-radius: var(--space-s);
-}
-
-nav {
-    box-shadow: 0 0 350px rgba(0, 255, 195, 0.8);
 }
 
 h1 {
@@ -141,25 +134,9 @@ h4 {
     font-weight: bold;
 }
 
-nav {
-    background-color: var(--bg2);
-    padding: var(--space-xs) 0;
-}
-
-nav > div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 footer {
     padding: var(--space-l) 0;
     background-color: var(--bg2);
-}
-
-footer > div {
-    align-items: center;
-    justify-content: space-between;
 }
 
 a {
