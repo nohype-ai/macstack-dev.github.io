@@ -176,7 +176,7 @@ code {
 
 /* NAVBAR LOGO */
 
-.logo {
+.logo.row {
     color: var(--primary);
     align-items: center;
     font-weight: bold;
@@ -197,7 +197,9 @@ code {
     background: black;
     padding: var(--space-s);
     padding-left: var(--space-m);
-    align-items: center;
+}
+
+.terminal.row {
     gap: var(--space-s);
 }
 
@@ -206,14 +208,13 @@ code {
         "CustomFontMono", SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas,
         "Liberation Mono", "Courier New", monospace;
     color: var(--accent);
-    flex: 1;
     overflow-wrap: anywhere; /* best modern way to break URLs */
     word-break: break-all;
 }
 
 /* SETUP STEPS */
 
-.step {
+.step.row {
     gap: var(--space-s);
 }
 
