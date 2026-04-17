@@ -176,7 +176,7 @@ code {
 
 /* NAVBAR LOGO */
 
-.logo.row {
+.logo.horizontal {
     color: var(--primary);
     align-items: center;
     font-weight: bold;
@@ -193,13 +193,13 @@ code {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 100vh; /* there is no more explicit offical way to create the pill shape */
+    border-radius: 100vh; /* most explicit offical way to create pill shape */
     background: black;
     padding: var(--space-s);
     padding-left: var(--space-m);
 }
 
-.terminal.row {
+.terminal.horizontal {
     gap: var(--space-s);
 }
 
@@ -214,7 +214,7 @@ code {
 
 /* SETUP STEPS */
 
-.step.row {
+.step.horizontal {
     gap: var(--space-s);
 }
 
