@@ -1,6 +1,23 @@
 ---
+
 kanban-plugin: board
+
 ---
+
+## Why MacStack
+
+- [x] Included goodies: Some usefulf functions, aliases, setup
+- [x] JSON comments are preserved
+- [x] MacStack brings together existing configuration systems (Brewfile, settings files etc.) rather than inventing a new declarative format. You do not need to learn anything new really.
+- [x] On any Mac: Blends into any machine, setup a fresh macOS install machines, introduce into established machine, managed machines, headless machines
+- [x] Back up your stack config wherever you want: Git repo, cloud folder, memory card, external drive, main drive
+- [x] Leightweight (no Containers, VMs or MDM)
+- [x] Compatible with Homebrew
+- [x] All Configs are optional. Expand your stack config at your own pace.
+- [x] Idempotent, Non-destructive. Nothing you didn’t declare gets touched. It preserves all existing config down to individual entries in dotfiles and settings files.
+- [x] MacStack allows explicating ALL aspects of a tech stack – far beyond what software is installed
+- [x] One command to rule them all
+
 
 ## Why Formalize a Tech Stack at all?
 
@@ -13,18 +30,6 @@ kanban-plugin: board
 - [ ] Speed, Security: durch Automatisierung, erlaubt auch alles immer aktuell zu halten (update kostet nix und ist vollständig), ist damit auch sicherer
 - [ ] Version Management: Duh! Vorteile von Version Management für alles oben gelistete
 
-## Why MacStack
-
-- [ ] One command to rule them all
-- [ ] MacStack allows explicating ALL aspects of a tech stack – far beyond what software is installed
-- [ ] Idempotent, Non-destructive. Nothing you didn’t declare gets touched. It preserves all existing config down to individual entries in dotfiles and settings files.
-- [ ] All Configs are optional. Expand your stack config at your own pace.
-- [ ] Compatible with Homebrew
-- [ ] Leightweight (no Containers, VMs or MDM)
-- [ ] Back up your stack config wherever you want: Git repo, cloud folder, memory card, external drive, main drive
-- [ ] On any Mac: Blends into any machine, setup a fresh macOS install machines, introduce into established machine, managed machines, headless machines
-- [ ] MacStack brings together existing configuration systems (Brewfile, settings files etc.) rather than inventing a new declarative format. You do not need to learn anything new really.
-- [ ] JSON comments are preserved
 
 ## Why Not Alternatives
 
@@ -33,6 +38,9 @@ kanban-plugin: board
 - [ ] Docker Containers
 - [ ] VMs (via tools like Tart)
 - [ ] MDM
+
+
+
 
 %% kanban:settings
 ```
