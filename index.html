@@ -29,7 +29,7 @@
                         )
                     "
                 >
-                    ★ GitHub
+                    ★ Star on GitHub
                 </button>
             </div>
         </nav>
@@ -47,6 +47,199 @@
 
         <section>
             <div class="container">
+                <h3>How to Begin</h3>
+                <h2>Get started in one minute</h2>
+
+                <div class="primary vertical">
+                    <div class="terminal horizontal bar">
+                        <span>
+                            curl -fsSL https://macstack.dev/setup.sh | zsh
+                        </span>
+                        <button onclick="copyCommand(this)">↓ Copy</button>
+                    </div>
+
+                    <div class="primary grid">
+                        <div class="step horizontal">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4>Run above command</h4>
+                                <p>
+                                    It will ensure Homebrew is present and set
+                                    up MacStack
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step horizontal">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4>Set config path</h4>
+                                <p>
+                                    Enter the folder path where your stack
+                                    config will live
+                                </p>
+                            </div>
+                        </div>
+                        <div class="step horizontal">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4>Apply your config</h4>
+                                <p>
+                                    Verify that your stack update now works:
+                                    <code class="step-inline-code"
+                                        >mack update</code
+                                    >
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h3>Why Use MacStack</h3>
+                <h2>Simple, Non-Destructive, Comprehensive</h2>
+                <div class="primary grid">
+                    <div>
+                        <h4>One Universal Command</h4>
+                        <code>mack update</code> applies your whole stack config
+                        and updates everything
+                    </div>
+                    <div>
+                        <h4>The Whole Stack</h4>
+                        Define all aspects of the stack – far beyond software
+                        installs
+                    </div>
+                    <div>
+                        <h4>Idempotent</h4>
+                        MacStack updates only what you configure and preserves
+                        all else – down to individual entries in dotfiles and
+                        settings files.
+                    </div>
+                    <div>
+                        <h4>All Configs Are Optional</h4>
+                        MacStack requires no configs at all. Expand your stack
+                        config at your own pace.
+                    </div>
+                    <div>
+                        <h4>Continue Using Homebrew</h4>
+                        MacStack employs Homebrew so you can continue using the
+                        de facto standard dependency manager.
+                    </div>
+                    <div>
+                        <h4>Lightweight</h4>
+                        MacStack is lightweight. No docker containers, virtual
+                        machines or MDM required.
+                    </div>
+                    <div>
+                        <h4>Flexible Storage</h4>
+                        Back up your stack config wherever you want, like in a
+                        git repo, cloud folder, memory card or external drive
+                    </div>
+                    <div>
+                        <h4>On Any Mac</h4>
+                        Blends into any Mac: fresh macOS installs, established
+                        machines, managed machines, headless machines
+                    </div>
+                    <div>
+                        <h4>Use What You Know</h4>
+                        MacStack brings together the configuration systems you
+                        already use. There's almost nothing new to learn.
+                    </div>
+                    <div>
+                        <h4>First-Class Comments</h4>
+                        <code>mack update</code> transfers even JSON comments,
+                        so you can continue using comments as documentation.
+                    </div>
+                    <div>
+                        <h4>Batteries Included</h4>
+                        MacStack includes a few powerful customizations and
+                        helpers out of the box – no stack config required.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h3>What MacStack Covers</h3>
+                <h2>Go beyond installs and updates</h2>
+                <div class="primary grid">
+                    <div>
+                        <h4>Shell Customization</h4>
+                        Prompt, environment, paths, functions, aliases
+                    </div>
+                    <div>
+                        <h4>Git Configuration</h4>
+                        Personal and general global git settings in
+                        <code>~/.gitconfig</code>
+                    </div>
+                    <div>
+                        <h4>Fonts</h4>
+                        All fonts you would install, like Fira Code and SF Mono
+                    </div>
+                    <div>
+                        <h4>CLI Tools</h4>
+                        Like brew, git, zsh, mise, claude, gemini, uv, python,
+                        rust
+                    </div>
+                    <div>
+                        <h4>App Store Apps</h4>
+                        Apps and browser extensions from the Mac App Store
+                    </div>
+                    <div>
+                        <h4>AI Agent Configurations</h4>
+                        Settings + permissions of Cursor Agent, Gemini CLI,
+                        OpenCode
+                    </div>
+                    <div>
+                        <h4>IDE Configurations</h4>
+                        Settings + keyboard shortcuts of VS Code based IDEs and
+                        Zed
+                    </div>
+                    <div>
+                        <h4>VS Code Extensions</h4>
+                        For any language support, agent integration and more
+                    </div>
+                    <div>
+                        <h4>Git Repositories</h4>
+                        All Git repos, their local paths, remotes, protocols
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h3>How MacStack Compares</h3>
+                <h2>MacStack is unique and uniquely simple</h2>
+                <div class="primary grid">
+                    <div>
+                        <h4>Ansible</h4>
+                        MacStack and Ansible solve different problems with
+                        different philosophies. MacStack is a
+                        <b>sharp, lightweight, Mac-native tool</b> optimized for
+                        a single developer (or small team) who wants a
+                        reproducible Mac setup with minimal overhead and
+                        uniquely good support for IDE and AI tooling
+                        configuration. Ansible is a
+                        <b
+                            >general-purpose, multi-platform orchestration
+                            engine</b
+                        >
+                        built for managing infrastructure at scale. Where they
+                        overlap (installing packages, configuring git, managing
+                        dotfiles on a Mac), MacStack is simpler and more
+                        ergonomic. Where they don't overlap, each has clear
+                        strengths the other lacks.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
                 <h3>Why Formalize a Tech Stack</h3>
                 <h2>Get a grip on your professional tools</h2>
                 <div class="primary grid">
@@ -57,8 +250,8 @@
                     </div>
                     <div>
                         <h4>Keep It Clean</h4>
-                        Easily get rid of unused stuff, thanks to explicitness,
-                        automation, and Homebrew's deep uninstalls.
+                        Easily get rid of unused stuff, thanks to explicit
+                        installs, automation, and Homebrew's deep uninstalls.
                     </div>
                     <div>
                         <h4>Use AI Effectively</h4>
@@ -117,196 +310,12 @@
         </section>
 
         <section>
-            <div class="container">
-                <h3>Why Use MacStack</h3>
-                <h2>Nothing new – except the ease of use</h2>
-                <div class="primary grid">
-                    <div>
-                        <h4>One Universal Command</h4>
-                        <code>mack update</code> applies your whole stack config
-                        and updates everything
-                    </div>
-                    <div>
-                        <h4>The Whole Stack</h4>
-                        Define all aspects of the stack – far beyond software
-                        installs
-                    </div>
-                    <div>
-                        <h4>Idempotent</h4>
-                        MacStack updates only what you configure and preserves
-                        all else – down to individual entries in dotfiles and
-                        settings files.
-                    </div>
-                    <div>
-                        <h4>All Configs Are Optional</h4>
-                        MacStack requires no configs at all. Expand your stack
-                        config at your own pace.
-                    </div>
-                    <div>
-                        <h4>Continue Using Homebrew</h4>
-                        MacStack employs Homebrew so you can continue using the
-                        de facto standard dependency manager.
-                    </div>
-                    <div>
-                        <h4>Lightweight</h4>
-                        MacStack is lightweight. No docker containers, virtual
-                        machines or MDM required.
-                    </div>
-                    <div>
-                        <h4>Flexible Storage</h4>
-                        Back up your stack config wherever you want, like in a
-                        git repo, cloud folder, memory card or external drive
-                    </div>
-                    <div>
-                        <h4>On Any Mac</h4>
-                        Blends into any Mac: fresh macOS installs, established
-                        machines, managed machines, headless machines
-                    </div>
-                    <div>
-                        <h4>Use What You Know</h4>
-                        MacStack brings together the configuration systems you
-                        already use. There's almost nothing new to learn.
-                    </div>
-                    <div>
-                        <h4>Single Source of Truth</h4>
-                        <code>mack update</code> transfers even JSON comments,
-                        so you can continue using comments as documentation.
-                    </div>
-                    <div>
-                        <h4>Goodies Included</h4>
-                        MacStack includes a few powerful customizations and
-                        helpers out of the box – no stack config required.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <h3>Why not use ... that other thing</h3>
-                <h2>MacStack is unique and uniquely simple</h2>
-                <div class="primary grid">
-                    <div>
-                        <h4>Ansible</h4>
-                        MacStack and Ansible solve different problems with
-                        different philosophies. MacStack is a
-                        <b>sharp, lightweight, Mac-native tool</b> optimized for
-                        a single developer (or small team) who wants a
-                        reproducible Mac setup with minimal overhead and
-                        uniquely good support for IDE and AI tooling
-                        configuration. Ansible is a
-                        <b
-                            >general-purpose, multi-platform orchestration
-                            engine</b
-                        >
-                        built for managing infrastructure at scale. Where they
-                        overlap (installing packages, configuring git, managing
-                        dotfiles on a Mac), MacStack is simpler and more
-                        ergonomic. Where they don't overlap, each has clear
-                        strengths the other lacks.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <h3>How to Begin</h3>
-                <h2>Get started in one minute</h2>
-
-                <div class="primary vertical">
-                    <div class="terminal horizontal bar">
-                        <span>
-                            curl -fsSL https://macstack.dev/setup.sh | zsh
-                        </span>
-                        <button onclick="copyCommand(this)">↓ Copy</button>
-                    </div>
-
-                    <div class="primary grid">
-                        <div class="step horizontal">
-                            <span class="step-number">1</span>
-                            <div class="step-content">
-                                <h4>Run above command</h4>
-                                <p>
-                                    It will ensure Homebrew is present and set
-                                    up MacStack
-                                </p>
-                            </div>
-                        </div>
-                        <div class="step horizontal">
-                            <span class="step-number">2</span>
-                            <div class="step-content">
-                                <h4>Set config path</h4>
-                                <p>
-                                    Enter the folder path where your stack
-                                    config will live
-                                </p>
-                            </div>
-                        </div>
-                        <div class="step horizontal">
-                            <span class="step-number">3</span>
-                            <div class="step-content">
-                                <h4>Apply your config</h4>
-                                <p>
-                                    Verify that your stack update now works:
-                                    <code class="step-inline-code"
-                                        >mack update</code
-                                    >
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <h3>What MacStack Covers</h3>
-                <h2>Go beyond installs and updates</h2>
-                <div class="primary grid">
-                    <div>
-                        <h4>Shell Customization</h4>
-                        Prompt, environment, paths, functions, aliases
-                    </div>
-                    <div>
-                        <h4>Git Configuration</h4>
-                        Personal and general global git settings in
-                        <code>~/.gitconfig</code>
-                    </div>
-                    <div>
-                        <h4>Fonts</h4>
-                        All fonts you would install, like Fira Code and SF Mono
-                    </div>
-                    <div>
-                        <h4>CLI Tools</h4>
-                        Like brew, git, zsh, mise, claude, gemini, uv, python,
-                        rust
-                    </div>
-                    <div>
-                        <h4>App Store Apps</h4>
-                        Apps and browser extensions from the Mac App Store
-                    </div>
-                    <div>
-                        <h4>AI Agent Configurations</h4>
-                        Settings + permissions of Cursor Agent, Gemini CLI,
-                        OpenCode
-                    </div>
-                    <div>
-                        <h4>IDE Configurations</h4>
-                        Settings + keyboard shortcuts of VS Code based IDEs and
-                        Zed
-                    </div>
-                    <div>
-                        <h4>VS Code Extensions</h4>
-                        For any language support, agent integration and more
-                    </div>
-                    <div>
-                        <h4>Git Repositories</h4>
-                        All Git repos, their local paths, remotes, protocols
-                    </div>
-                </div>
-            </div>
+            <h2>
+                Like what you see?<br />
+                <a href="https://github.com/nohype-ai/MacStack"
+                    >Star MacStack on GitHub ↗</a
+                >
+            </h2>
         </section>
 
         <footer>
