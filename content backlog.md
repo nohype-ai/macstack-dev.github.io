@@ -4,14 +4,23 @@ kanban-plugin: board
 
 ---
 
-## Why Not Alternatives
+## High Impact
 
-- [ ] Homebrew
-- [ ] Ansible
-- [ ] Docker Containers
-- [ ] VMs (via tools like Tart)
-- [ ] MDM
+- [ ] Bring back the section "How MacStack Compares" with relevant honest comparisons
 
+- [ ] The "How to Begin" section is now *first* but "Get started in one minute" as the `h2` is underselling it. At the very top of the page, before a visitor knows anything about the product, the CTA to run a curl command lands with zero context. The hero needs to do more work before the install section hits — the h2 "Your whole tech stack declared in code / and deployed in seconds" is the only thing between the logo and a curl command. That's likely not enough to establish what MacStack is.
+
+- [ ] "Star on GitHub" CTA with a live star count badge — `github-buttons` or shields.io – but not before we have a couple hundred stars (at the very least 100)
+
+- [ ] **No social proof, no visual.** A short terminal recording (asciinema, or even a GIF of `mack update` running) would outperform any amount of copy. Developers star things that *look* cool in motion. A screenshot or snippet of what a stack config file actually looks like would also help — you keep saying "declared in code" but never show the code.
+
+- [ ] **The Ansible comparison is probably the wrong competitor.** Developers considering a tool like this are far more likely to weigh it against **chezmoi, nix-darwin, Homebrew Bundle / Brewfile, mise, or a shell script / dotfiles repo**. Ansible is a strawman — comparing to it risks signaling "the author isn't aware of the actual landscape," which hurts credibility with the exact HN/dev audience you want stars from. Either replace with a compact comparison against the real alternatives, or drop the section entirely.
+
+- [ ] **Shrink "Why Formalize" from 12 cells to ~6.** Landing-page research is consistent on this: past 6 benefits, each additional cell dilutes rather than reinforces. Several cells overlap thematically (Keep It Clean / Keep It Consistent / Make It Last, or Accelerate Work / Stay in Control). Cut hard.
+
+## Medium Impact (tone/credibility)
+
+- [ ] **Hero subhead:** "deployed in seconds" is slightly off — you don't *deploy* a Mac. "Applied in seconds" or "reproduced in seconds" is more accurate and still punchy.
 
 
 
