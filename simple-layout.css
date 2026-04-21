@@ -87,3 +87,15 @@
 .secondary.horizontal {
     gap: var(--space-l);
 }
+
+/* TABLES */
+
+th {
+    text-align: left;
+}
+
+th,
+td {
+    padding: var(--space-s);
+    vertical-align: top;
+}
