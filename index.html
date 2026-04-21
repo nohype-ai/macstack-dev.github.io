@@ -62,41 +62,39 @@
                             <th scope="row">Single-purpose tools</th>
                             <td>Homebrew, mise, asdf, Stow, Dotbot</td>
                             <td>
-                                One <code>update</code> handles the whole chain:
-                                packages, dotfiles, IDE settings auto-fanned
-                                across seven VS Code-family editors, AI-agent
-                                rules and policies, and bidirectional repo sync.
-                                The script you'd keep rewriting is the one
-                                MacStack already ships.
+                                MacStack allows you to manage your whole stack
+                                end to end – not just one slice of it: software
+                                installs, dotfiles, IDE- and AI agent configs,
+                                bidirectional repo sync and more. If you would
+                                need one tool for each aspect, stack management
+                                would be too complex and fragile to even be
+                                worth it.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">File-owning tools</th>
                             <td>chezmoi, nix-darwin, Ansible</td>
                             <td>
-                                MacStack merges into your existing files instead
-                                of owning them — JSONC-aware,
-                                comment-preserving, set-union arrays. Your
-                                <code>settings.json</code>
-                                tweaks survive, comments stay put, and Homebrew,
-                                conda, or nvm can keep appending to your
-                                <code>~/.zshrc</code> without conflict.
-                                Co-existence is the default, not an escape
-                                hatch.
+                                MacStack makes peaceful co-existence the default
+                                – not an escape hatch. It is fully
+                                non-destructive, merging into your existing
+                                files instead of owning and overwriting them —
+                                JSONC-aware, comment-preserving, down to each
+                                property and line. Use MacStack alongside other
+                                tools and introduce it to established or managed
+                                machines without conflict.
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">Parallel sandboxes</th>
                             <td>Docker, Codespaces, Devbox, VMs, Tart</td>
                             <td>
-                                MacStack configures your real shell, your real
-                                IDE, your real Keychain, and your real
-                                <code>PATH</code>. The CLIs it installs
-                                (<code>mack</code>, <code>gitty</code>,
-                                <code>silent</code>) work in every terminal you
-                                already use. Containers and VMs still have their
-                                place — MacStack happily installs them — they
-                                just don't replace it.
+                                MacStack configures the real machines you, your
+                                team or your customers actually work with – not
+                                some isolated parallel sandbox. Containers and
+                                VMs still have their place — MacStack happily
+                                installs them — they just solve a different
+                                problem altogether.
                             </td>
                         </tr>
                         <tr>
