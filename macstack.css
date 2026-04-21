@@ -251,10 +251,10 @@ code {
 
 th:first-child,
 td:first-child {
-    min-width: 9vw;
+    min-width: 7vw;
 }
 
 th:nth-child(2),
 td:nth-child(2) {
-    min-width: 9vw;
+    min-width: 8vw;
 }
