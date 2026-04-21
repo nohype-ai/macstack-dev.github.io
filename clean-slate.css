@@ -25,12 +25,6 @@ svg {
     height: auto;
 }
 
-/* Lists – removes default bullets/numbers */
-ul,
-ol {
-    list-style: none;
-}
-
 /* RESET FORM CONTROLS (they otherwise get styled by the system) */
 button,
 input,
