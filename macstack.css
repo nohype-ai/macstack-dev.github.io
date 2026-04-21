@@ -246,3 +246,15 @@ code {
     /* Stretch to fill available space */
     flex: 1;
 }
+
+/* TABLE */
+
+th:first-child,
+td:first-child {
+    min-width: 9vw;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    min-width: 9vw;
+}

@@ -47,6 +47,78 @@
 
         <section>
             <div class="container">
+                <h3>How MacStack Compares</h3>
+                <h2>Understand MacStack in contrast to familiar tools</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Tools you might know</th>
+                            <th>How MacStack is different</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Single-purpose tools</th>
+                            <td>Homebrew, mise, asdf, Stow, Dotbot</td>
+                            <td>
+                                One <code>update</code> handles the whole chain:
+                                packages, dotfiles, IDE settings auto-fanned
+                                across seven VS Code-family editors, AI-agent
+                                rules and policies, and bidirectional repo sync.
+                                The script you'd keep rewriting is the one
+                                MacStack already ships.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">File-owning tools</th>
+                            <td>chezmoi, nix-darwin, Ansible</td>
+                            <td>
+                                MacStack merges into your existing files instead
+                                of owning them — JSONC-aware,
+                                comment-preserving, set-union arrays. Your
+                                <code>settings.json</code>
+                                tweaks survive, comments stay put, and Homebrew,
+                                conda, or nvm can keep appending to your
+                                <code>~/.zshrc</code> without conflict.
+                                Co-existence is the default, not an escape
+                                hatch.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Parallel sandboxes</th>
+                            <td>Docker, Codespaces, Devbox, VMs, Tart</td>
+                            <td>
+                                MacStack configures your real shell, your real
+                                IDE, your real Keychain, and your real
+                                <code>PATH</code>. The CLIs it installs
+                                (<code>mack</code>, <code>gitty</code>,
+                                <code>silent</code>) work in every terminal you
+                                already use. Containers and VMs still have their
+                                place — MacStack happily installs them — they
+                                just don't replace it.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fleet managers</th>
+                            <td>MDM, Jamf, Mosyle, Kandji, Intune</td>
+                            <td>
+                                MacStack empowers you (not your organisation) to
+                                manage your own machine. Your stack is a folder
+                                you own, containing readable files in formats
+                                you already use. No server, no enrollment, no
+                                telemetry, no per-device fee, no remote
+                                authority. Convergence runs locally when you say
+                                so, the way you defined it.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
                 <h3>How to Begin</h3>
                 <h2>Get started in one minute</h2>
 
@@ -210,37 +282,9 @@
             </div>
         </section>
 
-        <!--<section>
-            <div class="container">
-                <h3>How MacStack Compares</h3>
-                <h2>MacStack is unique and uniquely simple</h2>
-                <div class="primary grid">
-                    <div>
-                        <h4>Ansible</h4>
-                        MacStack and Ansible solve different problems with
-                        different philosophies. MacStack is a
-                        <b>sharp, lightweight, Mac-native tool</b> optimized for
-                        a single developer (or small team) who wants a
-                        reproducible Mac setup with minimal overhead and
-                        uniquely good support for IDE and AI tooling
-                        configuration. Ansible is a
-                        <b
-                            >general-purpose, multi-platform orchestration
-                            engine</b
-                        >
-                        built for managing infrastructure at scale. Where they
-                        overlap (installing packages, configuring git, managing
-                        dotfiles on a Mac), MacStack is simpler and more
-                        ergonomic. Where they don't overlap, each has clear
-                        strengths the other lacks.
-                    </div>
-                </div>
-            </div>
-        </section>-->
-
         <section>
             <div class="container">
-                <h3>Why Formalize a Tech Stack</h3>
+                <h3>Why Formalize a Tech Stack At All</h3>
                 <h2>Get a grip on your professional tools</h2>
                 <div class="primary grid">
                     <div>
