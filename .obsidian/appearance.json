@@ -1,12 +1,1 @@
-{
-  "translucency": true,
-  "accentColor": "#00ffc3",
-  "showViewHeader": false,
-  "showRibbon": false,
-  "interfaceFontFamily": "SF Pro Rounded",
-  "textFontFamily": "SF Pro Text",
-  "monospaceFontFamily": "SF Mono",
-  "baseFontSizeAction": true,
-  "baseFontSize": 14,
-  "nativeMenus": false
-}
+../../NohypeAIStack/stack/obsidian/appearance.json
