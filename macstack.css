@@ -85,10 +85,11 @@ header {
 header img {
     width: 150px;
     height: 150px;
-    margin-bottom: -35px;
+    margin-bottom: -15px;
     margin-left: auto;
     margin-right: auto;
 }
+
 section {
     margin-bottom: var(--space-xxl);
 }
@@ -101,21 +102,17 @@ section .container {
     border-radius: var(--space-s);
 }
 
-h1 {
-    color: var(--primary);
-    text-align: center;
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    letter-spacing: -2px;
-    margin-bottom: var(--space-s);
-}
-
+h1,
 h2 {
     text-align: center;
     font-size: var(--font-size-l);
     color: var(--primary);
     margin-bottom: calc(var(--space-xl) - 15px);
     font-weight: normal;
+}
+
+h2 a {
+    color: var(--accent);
 }
 
 h3 {
@@ -148,6 +145,7 @@ a {
 
 a:hover {
     color: var(--accent);
+    text-decoration: underline;
 }
 
 button {
