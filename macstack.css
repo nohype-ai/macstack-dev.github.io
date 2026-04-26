@@ -15,6 +15,7 @@ This file relies on other files being already loaded:
     --bg2: #141414;
     --bg3: #242424;
     --bg4: #343434;
+    --bg5: #444444;
 
     --font-size-s: 0.8rem;
     --font-size-m: 1rem;
@@ -249,12 +250,20 @@ code {
 
 /* TABLE */
 
-th:first-child,
-td:first-child {
-    min-width: 11rem;
+table {
+    border-collapse: collapse;
 }
 
-th:nth-child(2),
-td:nth-child(2) {
-    min-width: 13rem;
+th {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+td:first-child {
+    width: 25%;
+}
+
+tbody td {
+    border-top: 1px solid var(--bg5);
+    padding-top: var(--space-m);
 }
