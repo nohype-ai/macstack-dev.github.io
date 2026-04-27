@@ -158,6 +158,134 @@
 
         <section>
             <div class="container">
+                <h3>How MacStack Compares</h3>
+                <h2>We checked. Nothing else fit.</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>What You Might Know</th>
+                            <th>MacStack</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>Your own solution</h4>
+                                <code>setup.sh</code><br />
+                                <code>Brewfile</code><br />
+                                dotfiles&nbsp;repo<br />
+                                <code>README.md</code>
+                            </td>
+                            <td>
+                                <h4>Comprehensive solution — not compromise</h4>
+                                MacStack likely goes far beyond what you
+                                implemented yourself, while being fully
+                                non-destructive, preserving even your
+                                hand-edits, and applying even your JSON
+                                comments. It provides a well designed and tested
+                                vehicle so you can focus on your destination:
+                                your stack.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Single-purpose tools</h4>
+                                Homebrew<br />
+                                mise<br />
+                                asdf<br />
+                                Dotbot
+                                <!--Strap-->
+                            </td>
+                            <td>
+                                <h4>
+                                    Your whole stack end to end — not just one
+                                    slice of it
+                                </h4>
+                                MacStack lets you configure software installs,
+                                AI-agents, IDEs (across 7 editors), shell
+                                environment, custom hooks, bidirectional repo
+                                sync, and more. Without this general-purpose
+                                aggregator, comprehensive stack management would
+                                get too complex and fragile.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>File-owning tools</h4>
+                                Ansible<br />
+                                chezmoi<br />
+                                Stow<br />
+                                mackup
+                                <!--nix-darwin-->
+                            </td>
+                            <td>
+                                <h4>
+                                    Peaceful co-existence as the default — never
+                                    destructive
+                                </h4>
+                                MacStack merges into your existing files instead
+                                of owning and overwriting them — JSONC-aware,
+                                comment-preserving, down to the individual key
+                                and line. Use MacStack alongside other tools and
+                                introduce it to established or managed machines
+                                without conflict.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Parallel sandboxes</h4>
+                                Docker<br />
+                                Virtual&nbsp;machines<br />
+                                Codespaces<br />
+                                Parallels
+                                <!--UTM<br />
+                                Devbox<br />
+                                Tart-->
+                            </td>
+                            <td>
+                                <h4>
+                                    Your actual machine — not some parallel
+                                    isolated sandbox
+                                </h4>
+                                MacStack configures the machines you, your team,
+                                or your customers actually work with. Containers
+                                and virtual machines still have their place
+                                (MacStack happily installs them or gets
+                                installed in them); they just solve a different
+                                problem altogether.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Enterprise tools</h4>
+                                MDM<br />
+                                Jamf<br />
+                                Intune<br />
+                                Workbrew
+                                <!--Mosyle<br />
+                                Kandji-->
+                            </td>
+                            <td>
+                                <h4>
+                                    Putting you in control — not your
+                                    organization
+                                </h4>
+                                MacStack empowers you to manage your own
+                                machine. Your stack is a folder you own,
+                                containing readable files you already use. No
+                                server, no enrollment, no telemetry, no
+                                per-device fee, no remote authority. Convergence
+                                runs locally when you say so — the way you
+                                defined it.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
                 <h3>Why Use MacStack</h3>
                 <h2>Your whole stack. Zero lock-in.</h2>
                 <!--<h2>Taking care of your stack — not taking it over</h2>-->
@@ -289,134 +417,6 @@
                         All Git repos, their local paths, remotes, protocols
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <h3>How MacStack Compares</h3>
-                <h2>We checked. Nothing else fit.</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>What You Might Know</th>
-                            <th>MacStack</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h4>Your own solution</h4>
-                                <code>setup.sh</code><br />
-                                <code>Brewfile</code><br />
-                                dotfiles&nbsp;repo<br />
-                                <code>README.md</code>
-                            </td>
-                            <td>
-                                <h4>Comprehensive solution — not compromise</h4>
-                                MacStack likely goes far beyond what you
-                                implemented yourself, while being fully
-                                non-destructive, preserving even your
-                                hand-edits, and applying even your JSON
-                                comments. It provides a well designed and tested
-                                vehicle so you can focus on your destination:
-                                your stack.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4>Single-purpose tools</h4>
-                                Homebrew<br />
-                                mise<br />
-                                asdf<br />
-                                Dotbot
-                                <!--Strap-->
-                            </td>
-                            <td>
-                                <h4>
-                                    Your whole stack end to end — not just one
-                                    slice of it
-                                </h4>
-                                MacStack lets you configure software installs,
-                                AI-agents, IDEs (across 7 editors), shell
-                                environment, custom hooks, bidirectional repo
-                                sync, and more. Without this general-purpose
-                                aggregator, comprehensive stack management would
-                                get too complex and fragile.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4>File-owning tools</h4>
-                                Ansible<br />
-                                chezmoi<br />
-                                Stow<br />
-                                mackup
-                                <!--nix-darwin-->
-                            </td>
-                            <td>
-                                <h4>
-                                    Peaceful co-existence as the default — never
-                                    destructive
-                                </h4>
-                                MacStack merges into your existing files instead
-                                of owning and overwriting them — JSONC-aware,
-                                comment-preserving, down to the individual key
-                                and line. Use MacStack alongside other tools and
-                                introduce it to established or managed machines
-                                without conflict.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4>Parallel sandboxes</h4>
-                                Docker<br />
-                                Virtual&nbsp;machines<br />
-                                Codespaces<br />
-                                Parallels
-                                <!--UTM<br />
-                                Devbox<br />
-                                Tart-->
-                            </td>
-                            <td>
-                                <h4>
-                                    Your actual machine — not some parallel
-                                    isolated sandbox
-                                </h4>
-                                MacStack configures the machines you, your team,
-                                or your customers actually work with. Containers
-                                and virtual machines still have their place
-                                (MacStack happily installs them or gets
-                                installed in them); they just solve a different
-                                problem altogether.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h4>Enterprise tools</h4>
-                                MDM<br />
-                                Jamf<br />
-                                Intune<br />
-                                Workbrew
-                                <!--Mosyle<br />
-                                Kandji-->
-                            </td>
-                            <td>
-                                <h4>
-                                    Putting you in control — not your
-                                    organization
-                                </h4>
-                                MacStack empowers you to manage your own
-                                machine. Your stack is a folder you own,
-                                containing readable files you already use. No
-                                server, no enrollment, no telemetry, no
-                                per-device fee, no remote authority. Convergence
-                                runs locally when you say so — the way you
-                                defined it.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </section>
 
