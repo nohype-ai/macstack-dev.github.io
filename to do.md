@@ -10,7 +10,6 @@ kanban-plugin: board
 - [ ] Shrink cell count in "Why Use MacStack" section. Merge cells or move them elsewhere, or simply delete them, or remove the whole section from the landing page and make it a detail page.
 - [ ] **Shrink "Why Formalize" from 12 cells to ~6.** Landing-page research is consistent on this: past 6 benefits, each additional cell dilutes rather than reinforces. Several cells overlap thematically (Keep It Clean / Keep It Consistent / Make It Last, or Accelerate Work / Stay in Control). Cut hard.
 - [ ] AI-agent configuration deserves its own block somewhere — hero, features, or its own callout. There it can stand on its own ("first-class AI-agent config management for Cursor, Gemini CLI, OpenCode, MCP servers, …") without needing a competitor to contrast against (as it would in the comparison table).
-- [x] The "How to Begin" section is now *first* but "Get started in one minute" as the `h2` is underselling it. At the very top of the page, before a visitor knows anything about the product, the CTA to run a curl command lands with zero context. The hero needs to do more work before the install section hits — the h2 "Your whole tech stack declared in code / and deployed in seconds" is the only thing between the logo and a curl command. That's likely not enough to establish what MacStack is.
 
 
 ## Backlog
@@ -21,6 +20,7 @@ kanban-plugin: board
 
 ## Done
 
+- [x] The "How to Begin" section is now *first* but "Get started in one minute" as the `h2` is underselling it. At the very top of the page, before a visitor knows anything about the product, the CTA to run a curl command lands with zero context. The hero needs to do more work before the install section hits — the h2 "Your whole tech stack declared in code / and deployed in seconds" is the only thing between the logo and a curl command. That's likely not enough to establish what MacStack is.
 - [x] Bring back the section "How MacStack Compares" with relevant honest comparisons. Developers considering a tool like this are far more likely to weigh it against **chezmoi, nix-darwin, Homebrew Bundle / Brewfile, mise, or a shell script / dotfiles repo**. Ansible is a different category altogether, the comparison would need to reflect thatl.
 
 
